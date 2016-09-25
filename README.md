@@ -1,7 +1,11 @@
 #Учебная сборка Loftschool (выпускной проект №1) 
-
+Рудик Максим
 Stack:
  - Gulp 4.0
+Внесены изменения:
+1) добавлен таск copy.fonts.js
+2) добавлен таск sprite.png.js
+3) добавлен font-awesome, файл стилей импортирован в app.scss
  
 Getting started:
 

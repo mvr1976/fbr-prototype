@@ -1,4 +1,5 @@
 .greating {
+  font-family: 'robotomedium';
   overflow: hidden;
   position: relative;
   padding: 150px 20px 50px;
@@ -6,7 +7,8 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 
   &_text {
-    font: 45px 'Arial', sans-serif;
+    
+    font: 45px;
     color: #fff;
   }
 
