@@ -1,6 +1,11 @@
+html{
+	font-size: 16px;
+}
 body {
   margin: 0;
+  
 }
 
+@import 'common/mixins';
 @import 'common/greating';
 @import '../../bower_components/font-awesome/scss/font-awesome.scss';

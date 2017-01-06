@@ -1,15 +1,201 @@
-.greating {
-  font-family: 'robotomedium';
-  overflow: hidden;
+.index-wrapper{
   position: relative;
-  padding: 150px 20px 50px;
-  background: #F44336;
+  border-width: 0;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.8);
+}
+
+.index-slogan{
+    margin:auto;
+    color: #fff;
+    font-size: 7rem;
+    position: absolute;
+    top: 12rem; left: 5rem; bottom: 0; right: 0;
+    z-index:5;
+    @include laptop {
+      font-size: 5rem;
+      top: 10rem;
+    }
+    @include tablet {
+      font-size: 4rem;
+      top: 9rem;
+    }
+  }
+.index-contacts{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 16px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 0.8rem;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  i{
+    margin-left: 1rem;
+    padding-right: 0.3rem;
+    z-index:3;
+  }
+  span{
+    padding-right:1em;
+    
+    z-index: 3;
+  }
+}
+.index-menu{
+  position: absolute;
+  top:16px;
+  left:0;
+  z-index:2;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  text-transform: uppercase;
+  
+}
+.index-menu-modal{
+  position: absolute;
+  top: 0;
+  right: -35%;
+  width: 30%;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height:100%;
+  // height: 100vh;
+  margin: 0;
+  z-index:6;
+  background-color: rgba(0,0,0,0.8);
+  list-style: none;
+  // background-color: #033d53;
+  .index-menu-itemm{
+    
+    padding: 1rem;
+    margin: 1rem;
+    color: #fff;
+    z-index:7;
+  }
+  a{
+    color: #fff;
+    text-transform: uppercase;
+    
+  }
+}
+.modal-exit{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top:0.5rem;
+    right:0.5rem;
+    background-color:#fff;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.index-menu--left,.index-menu--right{
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+.index-menu-item{
+  display: none;
+  &.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+    padding: 1rem;
+  }
+}
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left:1rem;
+    cursor: pointer;
+
+    .rod{
+      width:1.5rem;
+      height: 3px;
+      margin: 0.2rem 0;
+      background-color: #fff;
+      &:hover{
+        height: 4px;
+      }
+    }
+    &:hover{
+      .rod{
+        height: 4px;
+      }
+    }
+}
+.index-logo{
+    // border-right: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding:1rem;
+  }
+.divider{
+  width: 1px;
+  background-color: #fff;
+  margin: 0.9rem 0;
+}
+.index-logo-text{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left:1rem;
+  font-size: 0.8rem;
+}
+.slider__pager{
+  height:5px;
+}
+.greatings{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  // margin: 1rem;
+}
+.greating{
+  width: 325px;
+  height: 110px;
+  margin: 2rem auto;
+  font-family: 'robotomedium';
+  // overflow: hidden;
+  // position: relative;
+  padding: 2rem 1rem;
+  // background: #F44336;
+  background: #fff;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  
 
   &_text {
-    
-    font: 45px;
-    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5rem;
+    span{
+      display: inline-block;
+      
+      color:#fff;
+      padding: 0.3rem;
+      margin: 0 0.3rem 0 0.3rem; 
+    }
   }
 
   &_picture {
@@ -23,7 +209,28 @@
     transition: transform 0.5s;
   }
 }
-
-.greating_picture.m--show {
-  transform: translate3D(0, 0, 0);
+.greating1{
+  border: 1rem solid
+#033d53;
+  span{
+    background-color:#033d53;
+  }
+}
+.greating2 {
+  border: 1rem solid #e35e26;
+  span{
+    background-color: #e35e26;
+  }
+}
+.greating3{
+  border: 1rem solid #81ad92;
+  span{
+    background-color: #81ad92;
+  }
+}
+.greating4 {
+  border: 1rem solid #7f60bd;
+  span{
+    background-color: #7f60bd;
+  }
 }
